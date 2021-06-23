@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".next"
+    android:background="@drawable/gmbg">
+
+<ImageButton
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:background="@drawable/box"
+    app:layout_constraintHeight_percent="0.8"
+    app:layout_constraintWidth_percent="0.85"
+    android:id="@+id/container"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Level\nCompleted"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lob_bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/levcomp"
+    />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/smiley"
+        app:layout_constraintTop_toBottomOf="@+id/levcomp"
+        app:layout_constraintLeft_toLeftOf="@id/container"
+        app:layout_constraintRight_toRightOf="@id/container"
+        android:layout_marginTop="20dp"
+        android:id="@+id/smile"
+        />
+
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="@id/container"
+        app:layout_constraintLeft_toLeftOf="@id/container"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/btn2"
+        android:id="@+id/homebtn"
+        />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintLeft_toLeftOf="@id/homebtn"
+        app:layout_constraintBottom_toBottomOf="@id/homebtn"
+        android:background="@drawable/home"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="@id/container"
+        app:layout_constraintRight_toRightOf="@id/container"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/btn2"
+        android:id="@+id/nextbtn"
+    />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="@id/nextbtn"
+        app:layout_constraintBottom_toBottomOf="@id/nextbtn"
+        android:background="@drawable/nextbtn"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
