@@ -111,6 +111,7 @@
                 <item
                     android:color="#1434E8"
                     android:offset="0.9" />
+                <!-- comment -->
 
             </gradient></aapt:attr></path>
     </group>
