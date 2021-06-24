@@ -24,7 +24,7 @@ public class square2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_square2);
-        level=static1.chosenlevel;
+        level=static1.chosenlevel-3;
         b1=findViewById(R.id.b1);
         b2=findViewById(R.id.b2);
         b3=findViewById(R.id.b3);
@@ -150,68 +150,68 @@ public class square2 extends AppCompatActivity {
 
     public void initgame()
     {
-        if(level==4) {
+        if(level==1) {
             color.clear();
             color.add(0);
+            color.add(1);
             color.add(0);
             color.add(0);
             color.add(0);
             color.add(0);
+            color.add(1);
+            color.add(0);
+            color.add(1);
             color.add(0);
             color.add(0);
+            color.add(1);
             color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
+            color.add(1);
             color.add(0);
             color.add(0);
         }
 
-        if(level==5)
+        if(level==2)
         {
             lev.setText("Level 5");
             color.clear();
             color.add(1);
-            color.add(0);
-            color.add(2);
             color.add(1);
             color.add(2);
+            color.add(1);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(2);
             color.add(0);
             color.add(2);
             color.add(0);
             color.add(0);
-            color.add(0);
             color.add(1);
-            color.add(1);
+            color.add(2);
             color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(1);
+            color.add(2);
         }
 
-        if(level==6)
+        if(level==3)
         {
             lev.setText("Level 6");
             color.clear();
             color.add(1);
+            color.add(3);
             color.add(0);
             color.add(2);
+            color.add(3);
             color.add(1);
+            color.add(3);
+            color.add(0);
             color.add(2);
-            color.add(0);
+            color.add(3);
             color.add(2);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(1);
-            color.add(1);
-            color.add(0);
-            color.add(0);
+            color.add(2);
+            color.add(3);
             color.add(0);
             color.add(1);
+            color.add(0);
         }
 
         for(int i=0; i<4;i++)
