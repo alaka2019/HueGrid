@@ -105,12 +105,12 @@ public class square extends AppCompatActivity {
 
                     boolean flag=checkfinish();
 
-                    /*if(flag)
+                    if(flag)
                     {
                         Intent in=new Intent(getApplicationContext(),next.class);
                         startActivity(in);
                         finish();
-                    }*/
+                    }
                 });
 
             }
@@ -163,15 +163,15 @@ public class square extends AppCompatActivity {
         if(level==3)
         {
             color.clear();
-            color.add(0);
-            color.add(0);
+            color.add(2);
             color.add(1);
-            color.add(1);
-            color.add(0);
-            color.add(0);
             color.add(0);
             color.add(1);
             color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(3);
         }
 
         for(int i=0; i<3;i++)
