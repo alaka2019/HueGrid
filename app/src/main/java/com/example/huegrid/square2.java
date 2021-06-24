@@ -23,7 +23,7 @@ public class square2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_square);
+        setContentView(R.layout.activity_square2);
         level=static1.chosenlevel;
         b1=findViewById(R.id.b1);
         b2=findViewById(R.id.b2);
@@ -154,25 +154,25 @@ public class square2 extends AppCompatActivity {
             color.clear();
             color.add(0);
             color.add(0);
-            color.add(1);
-            color.add(1);
             color.add(0);
             color.add(0);
             color.add(0);
-            color.add(1);
-            color.add(0);
-            color.add(0);
-            color.add(1);
-            color.add(1);
             color.add(0);
             color.add(0);
             color.add(0);
-            color.add(1);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
         }
 
         if(level==5)
         {
-            lev.setText("Level 2");
+            lev.setText("Level 5");
             color.clear();
             color.add(1);
             color.add(0);
@@ -194,7 +194,7 @@ public class square2 extends AppCompatActivity {
 
         if(level==6)
         {
-            lev.setText("Level 3");
+            lev.setText("Level 6");
             color.clear();
             color.add(1);
             color.add(0);
