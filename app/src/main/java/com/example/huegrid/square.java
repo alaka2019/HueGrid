@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ public class square extends AppCompatActivity {
     ImageButton b1, b2, b3, b4, b5, b6, b7, b8, b9;
     ImageView home, retry;
     int level;
-
+    TextView lev;
     ArrayList<Integer> color;
     ArrayList<ArrayList<ImageButton>> buttons;
 
@@ -35,6 +36,7 @@ public class square extends AppCompatActivity {
         b9=findViewById(R.id.b9);
         home=findViewById(R.id.im2);
         retry=findViewById(R.id.im1);
+        lev=findViewById(R.id.level1);
         color = new ArrayList<>();
         buttons= new ArrayList<>();
         ArrayList<ImageButton> temp1 = new ArrayList<>();
@@ -132,7 +134,6 @@ public class square extends AppCompatActivity {
 
     public void initgame()
     {
-
         if(level==1) {
             color.clear();
             color.add(0);
@@ -147,7 +148,8 @@ public class square extends AppCompatActivity {
         }
 
         if(level==2)
-        {   /*Hello*/
+        {
+            lev.setText("Level 2");
             color.clear();
             color.add(1);
             color.add(0);
@@ -162,6 +164,7 @@ public class square extends AppCompatActivity {
 
         if(level==3)
         {
+            lev.setText("Level 3");
             color.clear();
             color.add(2);
             color.add(1);

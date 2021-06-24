@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HueGrid">
-        <activity android:name=".next"></activity>
+        <activity android:name=".square2"></activity>
+        <activity android:name=".next" />
         <activity android:name=".level2" />
         <activity android:name=".square" />
         <activity android:name=".triangle" />
