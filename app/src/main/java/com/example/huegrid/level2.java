@@ -118,5 +118,12 @@ public class level2 extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+
+        else if(i<7)
+        {
+            Intent intent=new Intent(getApplicationContext(),square2.class);
+            startActivity(intent);
+            finish();
+        }
     }
 }

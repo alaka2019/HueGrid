@@ -13,7 +13,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class square2 extends AppCompatActivity {
-    ImageButton b1, b2, b3, b4, b5, b6, b7, b8, b9;
+    ImageButton b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16;
     ImageView home, retry;
     int level;
     TextView lev;
@@ -34,6 +34,13 @@ public class square2 extends AppCompatActivity {
         b7=findViewById(R.id.b7);
         b8=findViewById(R.id.b8);
         b9=findViewById(R.id.b9);
+        b10=findViewById(R.id.b10);
+        b11=findViewById(R.id.b11);
+        b12=findViewById(R.id.b12);
+        b13=findViewById(R.id.b13);
+        b14=findViewById(R.id.b14);
+        b15=findViewById(R.id.b15);
+        b16=findViewById(R.id.b16);
         home=findViewById(R.id.im2);
         retry=findViewById(R.id.im1);
         lev=findViewById(R.id.level1);
@@ -43,17 +50,26 @@ public class square2 extends AppCompatActivity {
         temp1.add(b1);
         temp1.add(b2);
         temp1.add(b3);
+        temp1.add(b4);
         buttons.add(temp1);
         ArrayList<ImageButton> temp2 = new ArrayList<>();
-        temp2.add(b4);
         temp2.add(b5);
         temp2.add(b6);
+        temp2.add(b7);
+        temp2.add(b8);
         buttons.add(temp2);
         ArrayList<ImageButton> temp3 = new ArrayList<>();
-        temp3.add(b7);
-        temp3.add(b8);
         temp3.add(b9);
+        temp3.add(b10);
+        temp3.add(b11);
+        temp3.add(b12);
         buttons.add(temp3);
+        ArrayList<ImageButton> temp4 = new ArrayList<>();
+        temp4.add(b13);
+        temp4.add(b14);
+        temp4.add(b15);
+        temp4.add(b16);
+        buttons.add(temp4);
 
         initgame();
 
@@ -65,43 +81,43 @@ public class square2 extends AppCompatActivity {
 
         retry.setOnClickListener(view->initgame());
 
-        for(int i=0; i<3; i++)
-        {    for(int j=0; j<3; j++)
+        for(int i=0; i<4; i++)
+        {    for(int j=0; j<4; j++)
         {
             int finalJ = j;
             int finalI = i;
 
             buttons.get(i).get(j).setOnClickListener(view -> {
 
-                for (int k = 0; k < 3; k++)
+                for (int k = 0; k < 4; k++)
                 {
-                    if (color.get(finalI * 3 + k) == level && k != finalJ) //row
+                    if (color.get(finalI * 4 + k) == level && k != finalJ) //row
                     {
-                        color.set(finalI * 3 + k, 0);
+                        color.set(finalI * 4 + k, 0);
                     }
 
                     else if(k!= finalJ)
                     {
-                        color.set(finalI * 3 + k, color.get(finalI * 3 + k) + 1);
+                        color.set(finalI * 4 + k, color.get(finalI * 4 + k) + 1);
                     }
 
-                    if (color.get(k * 3 + finalJ) == level) //column 1 to 0
+                    if (color.get(k * 4 + finalJ) == level) //column 1 to 0
                     {
-                        color.set(k * 3 + finalJ, 0);
+                        color.set(k * 4 + finalJ, 0);
                     }
 
                     else //0 to 1
                     {
-                        color.set(k * 3 + finalJ, color.get(k * 3 + finalJ) + 1);
+                        color.set(k * 4 + finalJ, color.get(k * 4 + finalJ) + 1);
                     }
 
                     if(k != finalJ) //same row other than the button color change
                     {
-                        colorchange(buttons.get(finalI).get(k), color.get(finalI * 3 + k));
+                        colorchange(buttons.get(finalI).get(k), color.get(finalI * 4 + k));
                     }
 
                     //all col buttons color change including the button clicked
-                    colorchange(buttons.get(k).get(finalJ),color.get(k * 3 + finalJ));
+                    colorchange(buttons.get(k).get(finalJ),color.get(k * 4 + finalJ));
 
                 }
 
@@ -124,7 +140,7 @@ public class square2 extends AppCompatActivity {
     public boolean checkfinish() {
         int sum=color.get(0);
 
-        for(int j=1; j<9; j++)
+        for(int j=1; j<16; j++)
             if(color.get(j)!=sum)
                 return false;
 
@@ -134,7 +150,7 @@ public class square2 extends AppCompatActivity {
 
     public void initgame()
     {
-        if(level==1) {
+        if(level==4) {
             color.clear();
             color.add(0);
             color.add(0);
@@ -145,9 +161,16 @@ public class square2 extends AppCompatActivity {
             color.add(0);
             color.add(1);
             color.add(0);
+            color.add(0);
+            color.add(1);
+            color.add(1);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(1);
         }
 
-        if(level==2)
+        if(level==5)
         {
             lev.setText("Level 2");
             color.clear();
@@ -160,28 +183,42 @@ public class square2 extends AppCompatActivity {
             color.add(2);
             color.add(0);
             color.add(0);
+            color.add(0);
+            color.add(1);
+            color.add(1);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(1);
         }
 
-        if(level==3)
+        if(level==6)
         {
             lev.setText("Level 3");
             color.clear();
+            color.add(1);
+            color.add(0);
             color.add(2);
             color.add(1);
+            color.add(2);
             color.add(0);
+            color.add(2);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(1);
             color.add(1);
             color.add(0);
             color.add(0);
             color.add(0);
-            color.add(0);
-            color.add(3);
+            color.add(1);
         }
 
-        for(int i=0; i<3;i++)
+        for(int i=0; i<4;i++)
         {
-            for(int j=0; j<3; j++)
+            for(int j=0; j<4; j++)
             {
-                colorchange(buttons.get(i).get(j),color.get(i*3+j));
+                colorchange(buttons.get(i).get(j),color.get(i*4+j));
             }
         }
     }
@@ -201,6 +238,5 @@ public class square2 extends AppCompatActivity {
         }
 
     }
-
 
 }
