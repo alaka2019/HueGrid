@@ -147,7 +147,7 @@ public class square extends AppCompatActivity {
         }
 
         if(level==2)
-        {
+        {   /*Hello*/
             color.clear();
             color.add(1);
             color.add(0);
