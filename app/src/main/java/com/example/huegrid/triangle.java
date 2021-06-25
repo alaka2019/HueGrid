@@ -147,44 +147,44 @@ public class triangle extends AppCompatActivity {
     {
         if(level==1) {
             color.clear();
+            color.add(1);
+            color.add(1);
+            color.add(0);
+            color.add(1);
+            color.add(1);
+            color.add(1);
             color.add(0);
             color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
+            color.add(1);
         }
 
         if(level==2)
         {
             lev.setText("Level 11");
             color.clear();
+            color.add(1);
+            color.add(2);
+            color.add(0);
+            color.add(2);
+            color.add(1);
             color.add(0);
             color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
+            color.add(1);
+            color.add(2);
         }
 
         if(level==3)
         {
             lev.setText("Level 12");
             color.clear();
+            color.add(1);
+            color.add(3);
+            color.add(3);
+            color.add(2);
+            color.add(1);
+            color.add(2);
             color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
+            color.add(3);
             color.add(0);
         }
 
