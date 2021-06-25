@@ -18,7 +18,7 @@ public class triangle extends AppCompatActivity {
     ArrayList<ImageButton> buttons;
     int level;
     TextView lev;
-    ImageView home, retry;
+    ImageView back, retry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +39,8 @@ public class triangle extends AppCompatActivity {
             buttons = new ArrayList<>();
             level=static1.chosenlevel-9;
             lev=findViewById(R.id.level);
-            home=findViewById(R.id.im2);
-            retry=findViewById(R.id.im1);
+            back=findViewById(R.id.back);
+            retry=findViewById(R.id.retry);
 
             buttons.add(b1);
             buttons.add(b2);
@@ -54,7 +54,7 @@ public class triangle extends AppCompatActivity {
 
             initgame();
 
-            home.setOnClickListener(view->{
+            back.setOnClickListener(view->{
                 Intent i = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(i);
                 finish();
