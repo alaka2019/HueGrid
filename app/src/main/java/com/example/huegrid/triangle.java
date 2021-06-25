@@ -125,13 +125,13 @@ public class triangle extends AppCompatActivity {
 
                         boolean flag=checkfinish();
 
-                        /*if(flag)
+                        if(flag)
                         {
                             Intent in=new Intent(getApplicationContext(),next.class);
                             startActivity(in);
                             finish();
                         }
-                        */
+
                     }
                 });
             }
