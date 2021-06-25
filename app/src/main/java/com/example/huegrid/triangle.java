@@ -69,39 +69,45 @@ public class triangle extends AppCompatActivity {
 
                         switch(finalI)
                         {
-                            case 1:
+                            case 1: color.set(3,(color.get(3)==level)?0:color.get(3)+1);
                                     break;
 
-                            case 2:
+                            case 2: color.set(3,(color.get(3)==level)?0:color.get(3)+1);
+                                    color.set(6,(color.get(6)==level)?0:color.get(6)+1);
                                     break;
 
-                            case 3: colorchange(b1,color.get(1),1);
-                                    colorchange(b2,color.get(2),2);
-                                    colorchange(b4,color.get(4),4);
+                            case 3: color.set(1,(color.get(1)==level)?0:color.get(1)+1);
+                                    color.set(2,(color.get(2)==level)?0:color.get(2)+1);
+                                    color.set(4,(color.get(4)==level)?0:color.get(4)+1);
                                     break;
 
-                            case 4: colorchange(b3,color.get(3),3);
-                                    colorchange(b8,color.get(8),8);
+                            case 4: color.set(3,(color.get(3)==level)?0:color.get(3)+1);
+                                    color.set(8,(color.get(8)==level)?0:color.get(8)+1);
                                     break;
 
-                            case 5: colorchange(b6,color.get(6),6);
+                            case 5: color.set(6,(color.get(6)==level)?0:color.get(6)+1);
                                     break;
 
-                            case 6: colorchange(b2,color.get(2),2);
-                                    colorchange(b5,color.get(5),5);
-                                    colorchange(b7,color.get(7),7);
+                            case 6: color.set(5,(color.get(5)==level)?0:color.get(5)+1);
+                                    color.set(2,(color.get(2)==level)?0:color.get(2)+1);
+                                    color.set(7,(color.get(7)==level)?0:color.get(7)+1);
                                     break;
 
-                            case 7: colorchange(b6,color.get(6),6);
-                                    colorchange(b8,color.get(8),8);
+                            case 7: color.set(6,(color.get(6)==level)?0:color.get(6)+1);
+                                    color.set(8,(color.get(8)==level)?0:color.get(8)+1);
                                     break;
 
-                            case 8: colorchange(b7,color.get(7),7);
-                                    colorchange(b9,color.get(9),9);
+                            case 8: color.set(7,(color.get(7)==level)?0:color.get(7)+1);
+                                    color.set(9,(color.get(9)==level)?0:color.get(9)+1);
                                     break;
 
-                            case 9: colorchange(b8,color.get(8),8);
+                            case 9: color.set(8,(color.get(8)==level)?0:color.get(8)+1);
                                     break;
+                        }
+
+                        for(int k=0; k<9; k++)
+                        {
+                            colorchange(buttons.get(k),color.get(k),k);
                         }
 
                         boolean flag=checkfinish();
