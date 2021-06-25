@@ -211,24 +211,24 @@ public class rhombus extends AppCompatActivity {
     {
         if(level==1) {
             color.clear();
+            color.add(1);
+            color.add(1);
             color.add(0);
+            color.add(1);
+            color.add(1);
             color.add(0);
+            color.add(1);
             color.add(0);
+            color.add(1);
+            color.add(1);
             color.add(0);
+            color.add(1);
             color.add(0);
+            color.add(1);
             color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
+            color.add(1);
+            color.add(1);
+            color.add(1);
         }
 
         if(level==2)
@@ -236,47 +236,47 @@ public class rhombus extends AppCompatActivity {
             lev.setText("Level 14");
             color.clear();
             /*Tough*/
+            color.add(2);
+            color.add(0);
+            color.add(1);
+            color.add(2);
+            color.add(1);
+            color.add(0);
+            color.add(1);
+            color.add(0);
+            color.add(2);
+            color.add(0);
+            color.add(1);
+            color.add(1);
+            color.add(2);
             color.add(0);
             color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
+            color.add(1);
+            color.add(1);
+            color.add(2);
         }
 
         if(level==3)
         {
             lev.setText("Level 15");
             color.clear();
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
+            color.add(1);
+            color.add(3);
+            color.add(3);
+            color.add(3);
+            color.add(3);
+            color.add(3);
+            color.add(2);
+            color.add(3);
+            color.add(1);
+            color.add(3);
+            color.add(2);
+            color.add(2);
+            color.add(1);
+            color.add(1);
+            color.add(2);
+            color.add(1);
+            color.add(1);
             color.add(0);
         }
 
