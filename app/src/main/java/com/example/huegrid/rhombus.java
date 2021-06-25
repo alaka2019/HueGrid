@@ -61,6 +61,16 @@ public class rhombus extends AppCompatActivity {
             buttons.add(b7);
             buttons.add(b8);
             buttons.add(b9);
+            buttons.add(b10);
+            buttons.add(b11);
+            buttons.add(b12);
+            buttons.add(b13);
+            buttons.add(b14);
+            buttons.add(b15);
+            buttons.add(b16);
+            buttons.add(b17);
+            buttons.add(b18);
+
 
             initgame();
 
