@@ -65,7 +65,7 @@ public class triangle extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
 
-                        colorchange(buttons.get(finalI),color.get(finalI),finalI);
+                        color.set(finalI,(color.get(finalI)==level)?0:color.get(finalI)+1);
 
                         switch(finalI)
                         {
