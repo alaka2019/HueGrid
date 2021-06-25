@@ -182,7 +182,7 @@ public class triangle extends AppCompatActivity {
     }
 
     public void colorchange(ImageButton imb, int i, int j) {
-        if(i==2||i==5||i==7)
+        if(j==2||j==5||j==7)
         {
             switch (i) {
                 case 0:
