@@ -162,6 +162,7 @@ public class triangle extends AppCompatActivity {
         {
             lev.setText("Level 11");
             color.clear();
+            /*Tough*/
             color.add(1);
             color.add(2);
             color.add(0);
