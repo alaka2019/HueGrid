@@ -97,7 +97,8 @@ public class triangle extends AppCompatActivity {
                                     color.set(7,(color.get(7)==level)?0:color.get(7)+1);
                                     break;
 
-                            case 7: color.set(6,(color.get(6)==level)?0:color.get(6)+1);
+                            case 7: color.set(3,(color.get(3)==level)?0:color.get(3)+1);
+                                    color.set(6,(color.get(6)==level)?0:color.get(6)+1);
                                     color.set(8,(color.get(8)==level)?0:color.get(8)+1);
                                     break;
 
