@@ -139,5 +139,12 @@ public class level2 extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+
+        else if(i<16)
+        {
+            Intent intent=new Intent(getApplicationContext(),rhombus.class);
+            startActivity(intent);
+            finish();
+        }
     }
 }
