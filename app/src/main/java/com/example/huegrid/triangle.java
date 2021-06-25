@@ -2,13 +2,229 @@ package com.example.huegrid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class triangle extends AppCompatActivity {
+    ImageButton b1,b2,b3,b4,b5,b6,b7,b8,b9;
+    ArrayList<Integer> color;
+    ArrayList<ImageButton> buttons;
+    int level;
+    TextView lev;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_triangle);
+        try
+        {
+            b1 = findViewById(R.id.b1);
+            b2 = findViewById(R.id.b2);
+            b3 = findViewById(R.id.b3);
+            b4 = findViewById(R.id.b4);
+            b5 = findViewById(R.id.b5);
+            b6 = findViewById(R.id.b6);
+            b7 = findViewById(R.id.b7);
+            b8 = findViewById(R.id.b8);
+            b9 = findViewById(R.id.b9);
+            color = new ArrayList<>();
+            buttons = new ArrayList<>();
+            level=static1.chosenlevel-9;
+            lev=findViewById(R.id.level);
+
+            buttons.add(b1);
+            buttons.add(b2);
+            buttons.add(b3);
+            buttons.add(b4);
+            buttons.add(b5);
+            buttons.add(b6);
+            buttons.add(b7);
+            buttons.add(b8);
+            buttons.add(b9);
+
+            initgame();
+        }
+
+        catch(Exception e)
+        {
+            Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        try
+        {
+            for(int i=0; i<9; i++)
+            {
+                int finalI = i;
+                buttons.get(i).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        colorchange(buttons.get(finalI),color.get(finalI),finalI);
+
+                        switch(finalI)
+                        {
+                            case 1:
+                                    break;
+
+                            case 2:
+                                    break;
+
+                            case 3: colorchange(b1,color.get(1),1);
+                                    colorchange(b2,color.get(2),2);
+                                    colorchange(b4,color.get(4),4);
+                                    break;
+
+                            case 4: colorchange(b3,color.get(3),3);
+                                    colorchange(b8,color.get(8),8);
+                                    break;
+
+                            case 5: colorchange(b6,color.get(6),6);
+                                    break;
+
+                            case 6: colorchange(b2,color.get(2),2);
+                                    colorchange(b5,color.get(5),5);
+                                    colorchange(b7,color.get(7),7);
+                                    break;
+
+                            case 7: colorchange(b6,color.get(6),6);
+                                    colorchange(b8,color.get(8),8);
+                                    break;
+
+                            case 8: colorchange(b7,color.get(7),7);
+                                    colorchange(b9,color.get(9),9);
+                                    break;
+
+                            case 9: colorchange(b8,color.get(8),8);
+                                    break;
+                        }
+
+                        boolean flag=checkfinish();
+
+                        /*if(flag)
+                        {
+                            Intent in=new Intent(getApplicationContext(),next.class);
+                            startActivity(in);
+                            finish();
+                        }
+                        */
+                    }
+                });
+            }
+        }
+
+        catch(Exception e)
+        {
+            Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
+        }
     }
+
+    public void initgame()
+    {
+        if(level==1) {
+            color.clear();
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+        }
+
+        if(level==2)
+        {
+            lev.setText("Level 11");
+            color.clear();
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+        }
+
+        if(level==3)
+        {
+            lev.setText("Level 12");
+            color.clear();
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+        }
+
+        for(int i=0; i<9;i++)
+        {
+            colorchange(buttons.get(i),color.get(i),i);
+        }
+    }
+
+    public void colorchange(ImageButton imb, int i, int j) {
+        if(i==3||i==6||i==8)
+        {
+            switch (i) {
+                case 0:
+                    imb.setImageResource(R.drawable.bg11);
+                    break;
+                case 1:
+                    imb.setImageResource(R.drawable.bg22);
+                    break;
+                case 2:
+                    imb.setImageResource(R.drawable.bg33);
+                    break;
+                case 3:
+                    imb.setImageResource(R.drawable.bg44);
+                    break;
+            }
+        }
+
+        else
+        {
+            switch (i) {
+                case 0:
+                    imb.setImageResource(R.drawable.bg1);
+                    break;
+                case 1:
+                    imb.setImageResource(R.drawable.bg2);
+                    break;
+                case 2:
+                    imb.setImageResource(R.drawable.bg3);
+                    break;
+                case 3:
+                    imb.setImageResource(R.drawable.bg4);
+                    break;
+            }
+        }
+
+    }
+
+    public boolean checkfinish()
+    {
+        int sum=color.get(0);
+
+        for(int j=1; j<9; j++)
+            if(color.get(j)!=sum)
+                return false;
+
+        return true;
+
+    }
+
+
 }

@@ -15,7 +15,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:textColor="@color/white"
         android:textSize="45dp"
-        android:text="Level 1"
+        android:text="Level 10"
         android:fontFamily="@font/lob_bold"
         android:gravity="center"
         android:layout_marginTop="50dp"
@@ -42,6 +42,7 @@
         android:background="@drawable/bg1"
         android:layout_marginRight="40dp"
         />
+
     <ImageButton
         android:layout_width="80dp"
         android:layout_height="70dp"
@@ -49,8 +50,9 @@
         app:layout_constraintTop_toBottomOf="@id/b1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:background="@drawable/bg2"
+        android:background="@drawable/bg22"
         />
+
     <ImageButton
         android:layout_width="80dp"
         android:layout_height="70dp"
@@ -77,7 +79,7 @@
         android:id="@+id/b6"
         app:layout_constraintTop_toBottomOf="@id/b2"
         app:layout_constraintLeft_toLeftOf="@id/b2"
-        android:background="@drawable/bg2"
+        android:background="@drawable/bg22"
         />
 
     <ImageButton
@@ -96,7 +98,7 @@
         android:id="@+id/b8"
         app:layout_constraintTop_toBottomOf="@id/b2"
         app:layout_constraintLeft_toLeftOf="@id/b4"
-        android:background="@drawable/bg2"
+        android:background="@drawable/bg11"
         />
 
     <ImageButton
@@ -105,7 +107,7 @@
         android:id="@+id/b9"
         app:layout_constraintTop_toBottomOf="@id/b2"
         app:layout_constraintLeft_toLeftOf="@id/b4"
-        android:background="@drawable/bg1"
+        android:background="@drawable/bg2"
         android:layout_marginLeft="40dp"
         />
 
