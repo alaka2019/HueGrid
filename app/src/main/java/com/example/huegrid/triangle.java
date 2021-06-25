@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +18,7 @@ public class triangle extends AppCompatActivity {
     ArrayList<ImageButton> buttons;
     int level;
     TextView lev;
+    ImageView home, retry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,8 @@ public class triangle extends AppCompatActivity {
             buttons = new ArrayList<>();
             level=static1.chosenlevel-9;
             lev=findViewById(R.id.level);
+            home=findViewById(R.id.im2);
+            retry=findViewById(R.id.im1);
 
             buttons.add(b1);
             buttons.add(b2);
@@ -49,6 +53,14 @@ public class triangle extends AppCompatActivity {
             buttons.add(b9);
 
             initgame();
+
+            home.setOnClickListener(view->{
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
+                finish();
+            });
+
+            retry.setOnClickListener(view->initgame());
         }
 
         catch(Exception e)
