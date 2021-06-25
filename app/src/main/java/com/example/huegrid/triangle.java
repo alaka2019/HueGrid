@@ -69,39 +69,39 @@ public class triangle extends AppCompatActivity {
 
                         switch(finalI)
                         {
-                            case 1: color.set(3,(color.get(3)==level)?0:color.get(3)+1);
+                            case 1: color.set(2,(color.get(2)==level)?0:color.get(2)+1);
                                     break;
 
-                            case 2: color.set(3,(color.get(3)==level)?0:color.get(3)+1);
-                                    color.set(6,(color.get(6)==level)?0:color.get(6)+1);
+                            case 2: color.set(2,(color.get(2)==level)?0:color.get(2)+1);
+                                    color.set(5,(color.get(5)==level)?0:color.get(5)+1);
                                     break;
 
-                            case 3: color.set(1,(color.get(1)==level)?0:color.get(1)+1);
-                                    color.set(2,(color.get(2)==level)?0:color.get(2)+1);
-                                    color.set(4,(color.get(4)==level)?0:color.get(4)+1);
+                            case 3: color.set(0,(color.get(0)==level)?0:color.get(0)+1);
+                                    color.set(1,(color.get(1)==level)?0:color.get(1)+1);
+                                    color.set(3,(color.get(3)==level)?0:color.get(3)+1);
                                     break;
 
-                            case 4: color.set(3,(color.get(3)==level)?0:color.get(3)+1);
-                                    color.set(8,(color.get(8)==level)?0:color.get(8)+1);
-                                    break;
-
-                            case 5: color.set(6,(color.get(6)==level)?0:color.get(6)+1);
-                                    break;
-
-                            case 6: color.set(5,(color.get(5)==level)?0:color.get(5)+1);
-                                    color.set(2,(color.get(2)==level)?0:color.get(2)+1);
+                            case 4: color.set(2,(color.get(2)==level)?0:color.get(2)+1);
                                     color.set(7,(color.get(7)==level)?0:color.get(7)+1);
                                     break;
 
-                            case 7: color.set(6,(color.get(6)==level)?0:color.get(6)+1);
+                            case 5: color.set(5,(color.get(5)==level)?0:color.get(5)+1);
+                                    break;
+
+                            case 6: color.set(4,(color.get(4)==level)?0:color.get(4)+1);
+                                    color.set(1,(color.get(1)==level)?0:color.get(1)+1);
+                                    color.set(6,(color.get(6)==level)?0:color.get(6)+1);
+                                    break;
+
+                            case 7: color.set(5,(color.get(5)==level)?0:color.get(5)+1);
+                                    color.set(7,(color.get(7)==level)?0:color.get(7)+1);
+                                    break;
+
+                            case 8: color.set(6,(color.get(6)==level)?0:color.get(6)+1);
                                     color.set(8,(color.get(8)==level)?0:color.get(8)+1);
                                     break;
 
-                            case 8: color.set(7,(color.get(7)==level)?0:color.get(7)+1);
-                                    color.set(9,(color.get(9)==level)?0:color.get(9)+1);
-                                    break;
-
-                            case 9: color.set(8,(color.get(8)==level)?0:color.get(8)+1);
+                            case 9: color.set(7,(color.get(7)==level)?0:color.get(7)+1);
                                     break;
                         }
 
@@ -182,7 +182,7 @@ public class triangle extends AppCompatActivity {
     }
 
     public void colorchange(ImageButton imb, int i, int j) {
-        if(i==3||i==6||i==8)
+        if(i==2||i==5||i==7)
         {
             switch (i) {
                 case 0:
