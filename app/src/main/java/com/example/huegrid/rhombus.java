@@ -168,17 +168,16 @@ public class rhombus extends AppCompatActivity {
                                     break;
 
                             case 15: color.set(14,(color.get(14)==level)?0:color.get(14)+1);
-                                color.set(17,(color.get(17)==level)?0:color.get(17)+1);
-                                color.set(16,(color.get(16)==level)?0:color.get(16)+1);
-                                break;
+                                    color.set(17,(color.get(17)==level)?0:color.get(17)+1);
+                                    color.set(16,(color.get(16)==level)?0:color.get(16)+1);
+                                    break;
 
                             case 16: color.set(15,(color.get(15)==level)?0:color.get(15)+1);
                                     color.set(12,(color.get(12)==level)?0:color.get(12)+1);
                                     break;
 
                             case 17: color.set(15,(color.get(15)==level)?0:color.get(15)+1);
-                                break;
-
+                                    break;
 
                         }
 
