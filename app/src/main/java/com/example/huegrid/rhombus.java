@@ -182,19 +182,19 @@ public class rhombus extends AppCompatActivity {
 
                         }
 
-                        for(int k=0; k<9; k++)
+                        for(int k=0; k<18; k++)
                         {
                             colorchange(buttons.get(k),color.get(k),k);
                         }
 
                         boolean flag=checkfinish();
 
-                        if(flag)
+                        /*if(flag)
                         {
                             Intent in=new Intent(getApplicationContext(),next.class);
                             startActivity(in);
                             finish();
-                        }
+                        }*/
 
                     }
                 });
