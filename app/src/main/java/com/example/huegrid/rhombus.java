@@ -188,12 +188,12 @@ public class rhombus extends AppCompatActivity {
 
                         boolean flag=checkfinish();
 
-                        /*if(flag)
+                        if(flag)
                         {
                             Intent in=new Intent(getApplicationContext(),next.class);
                             startActivity(in);
                             finish();
-                        }*/
+                        }
 
                     }
                 });
@@ -283,24 +283,24 @@ public class rhombus extends AppCompatActivity {
         {
             lev.setText("Level 25");
             color.clear();
+            color.add(4);
             color.add(0);
+            color.add(3);
+            color.add(2);
+            color.add(4);
             color.add(0);
+            color.add(3);
+            color.add(2);
             color.add(0);
+            color.add(3);
             color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(0);
+            color.add(1);
+            color.add(2);
+            color.add(4);
+            color.add(4);
+            color.add(2);
+            color.add(3);
+            color.add(1);
         }
 
         for(int i=0; i<18;i++)
