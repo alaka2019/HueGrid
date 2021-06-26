@@ -16,7 +16,7 @@ public class triangle extends AppCompatActivity {
     ImageButton b1,b2,b3,b4,b5,b6,b7,b8,b9;
     ArrayList<Integer> color;
     ArrayList<ImageButton> buttons;
-    int level;
+    int level,level2;
     TextView lev;
     ImageView back, retry;
 
@@ -37,7 +37,8 @@ public class triangle extends AppCompatActivity {
             b9 = findViewById(R.id.b9);
             color = new ArrayList<>();
             buttons = new ArrayList<>();
-            level=static1.chosenlevel-9;
+            level2=static1.chosenlevel;
+            level=level2/2-7;
             lev=findViewById(R.id.level);
             back=findViewById(R.id.back);
             retry=findViewById(R.id.retry);
@@ -145,7 +146,7 @@ public class triangle extends AppCompatActivity {
 
     public void initgame()
     {
-        if(level==1) {
+        if(level2==16) {
             color.clear();
             color.add(1);
             color.add(1);
@@ -158,9 +159,23 @@ public class triangle extends AppCompatActivity {
             color.add(1);
         }
 
-        if(level==2)
+        if(level2==17) {
+            lev.setText("Level 17");
+            color.clear();
+            color.add(1);
+            color.add(0);
+            color.add(1);
+            color.add(1);
+            color.add(1);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(1);
+        }
+
+        if(level2==18)
         {
-            lev.setText("Level 11");
+            lev.setText("Level 18");
             color.clear();
             /*Tough*/
             color.add(1);
@@ -174,9 +189,24 @@ public class triangle extends AppCompatActivity {
             color.add(2);
         }
 
-        if(level==3)
+        if(level2==19)
         {
-            lev.setText("Level 12");
+            lev.setText("Level 19");
+            color.clear();
+            color.add(2);
+            color.add(0);
+            color.add(1);
+            color.add(0);
+            color.add(1);
+            color.add(0);
+            color.add(0);
+            color.add(1);
+            color.add(2);
+        }
+
+        if(level2==20)
+        {
+            lev.setText("Level 20");
             color.clear();
             color.add(1);
             color.add(3);
@@ -186,6 +216,21 @@ public class triangle extends AppCompatActivity {
             color.add(2);
             color.add(0);
             color.add(3);
+            color.add(0);
+        }
+
+        if(level2==21)
+        {
+            lev.setText("Level 21");
+            color.clear();
+            color.add(1);
+            color.add(3);
+            color.add(0);
+            color.add(3);
+            color.add(1);
+            color.add(2);
+            color.add(0);
+            color.add(0);
             color.add(0);
         }
 
