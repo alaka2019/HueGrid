@@ -77,4 +77,18 @@ public class next extends AppCompatActivity {
             finish();
         }
     }
+
+    public void onBackPressed() {
+        try {
+            super.onBackPressed();
+            Intent i = new Intent(getApplicationContext(),level2.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(i);
+            finish();
+        }
+        catch (Exception e)
+        {
+            Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
+        }
+    }
 }
