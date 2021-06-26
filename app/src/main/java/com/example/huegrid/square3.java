@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class square3 extends AppCompatActivity {
     ImageButton b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24, b25;
     ImageView home, retry;
-    int level;
+    int level, level2;
     TextView lev;
     ArrayList<Integer> color;
     ArrayList<ArrayList<ImageButton>> buttons;
@@ -24,7 +24,8 @@ public class square3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_square3);
-        level=static1.chosenlevel-6;
+        level2=static1.chosenlevel;
+        level=level2/2-4;
         b1=findViewById(R.id.b1);
         b2=findViewById(R.id.b2);
         b3=findViewById(R.id.b3);
@@ -170,7 +171,7 @@ public class square3 extends AppCompatActivity {
 
     public void initgame()
     {
-        if(level==1) {
+        if(level2==10) {
             color.clear();
             color.add(1);
             color.add(1);
@@ -199,9 +200,39 @@ public class square3 extends AppCompatActivity {
             color.add(0);
         }
 
-        if(level==2)
+        if(level2==11) {
+            lev.setText("Level 11`");
+            color.clear();
+            color.add(0);
+            color.add(0);
+            color.add(1);
+            color.add(1);
+            color.add(0);
+            color.add(1);
+            color.add(1);
+            color.add(0);
+            color.add(1);
+            color.add(1);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(1);
+            color.add(0);
+            color.add(1);
+            color.add(1);
+            color.add(1);
+            color.add(0);
+            color.add(1);
+            color.add(0);
+            color.add(1);
+            color.add(0);
+        }
+
+        if(level2==12)
         {
-            lev.setText("Level 8");
+            lev.setText("Level 12");
             color.clear();
             color.add(1);
             color.add(0);
@@ -230,9 +261,40 @@ public class square3 extends AppCompatActivity {
             color.add(0);
         }
 
-        if(level==3)
+        if(level2==13)
         {
-            lev.setText("Level 9");
+            lev.setText("Level 13");
+            color.clear();
+            color.add(2);
+            color.add(1);
+            color.add(0);
+            color.add(1);
+            color.add(2);
+            color.add(1);
+            color.add(1);
+            color.add(0);
+            color.add(2);
+            color.add(0);
+            color.add(0);
+            color.add(2);
+            color.add(1);
+            color.add(2);
+            color.add(2);
+            color.add(2);
+            color.add(1);
+            color.add(1);
+            color.add(2);
+            color.add(0);
+            color.add(1);
+            color.add(2);
+            color.add(0);
+            color.add(1);
+            color.add(0);
+        }
+
+        if(level2==14)
+        {
+            lev.setText("Level 14");
             color.clear();
             color.add(1);
             color.add(0);
@@ -255,6 +317,37 @@ public class square3 extends AppCompatActivity {
             color.add(0);
             color.add(3);
             color.add(1);
+            color.add(2);
+            color.add(3);
+            color.add(1);
+            color.add(0);
+        }
+
+        if(level2==15)
+        {
+            lev.setText("Level 15");
+            color.clear();
+            color.add(2);
+            color.add(1);
+            color.add(2);
+            color.add(2);
+            color.add(1);
+            color.add(1);
+            color.add(2);
+            color.add(1);
+            color.add(3);
+            color.add(1);
+            color.add(1);
+            color.add(2);
+            color.add(0);
+            color.add(2);
+            color.add(3);
+            color.add(2);
+            color.add(1);
+            color.add(2);
+            color.add(0);
+            color.add(3);
+            color.add(2);
             color.add(2);
             color.add(3);
             color.add(1);

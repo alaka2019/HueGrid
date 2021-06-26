@@ -11,7 +11,6 @@ import android.widget.Toast;
 public class next extends AppCompatActivity {
 
     ImageView home, next;
-    int level;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +19,6 @@ public class next extends AppCompatActivity {
 
         home=findViewById(R.id.home);
         next=findViewById(R.id.next);
-        level=static1.chosenlevel;
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,8 +33,8 @@ public class next extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                level=level+1;
-                gotolevel(level);
+                static1.chosenlevel=static1.chosenlevel+1;
+                gotolevel(static1.chosenlevel);
             }
         });
     }
