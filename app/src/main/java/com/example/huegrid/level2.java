@@ -18,8 +18,10 @@ public class level2 extends AppCompatActivity {
     boolean page=true;
     ArrayList<TextView> levelButtons;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        try{
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        try
+        {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level2);
         iv=findViewById(R.id.nextpage);
@@ -40,23 +42,25 @@ public class level2 extends AppCompatActivity {
         levelButtons = new ArrayList<TextView>();
         levelButtons.add(b1);
         levelButtons.add(b2);
-            levelButtons.add(b3);
-            levelButtons.add(b4);
-            levelButtons.add(b5);
-            levelButtons.add(b6);
-            levelButtons.add(b7);
-            levelButtons.add(b8);
-            levelButtons.add(b9);
-            levelButtons.add(b10);
-            levelButtons.add(b11);
-            levelButtons.add(b12);
+        levelButtons.add(b3);
+        levelButtons.add(b4);
+        levelButtons.add(b5);
+        levelButtons.add(b6);
+        levelButtons.add(b7);
+        levelButtons.add(b8);
+        levelButtons.add(b9);
+        levelButtons.add(b10);
+        levelButtons.add(b11);
+        levelButtons.add(b12);
 
             for (int i = 0; i<12;i++)
             {
                 int finalI = i;
-                levelButtons.get(i).setOnClickListener(new View.OnClickListener() {
+                levelButtons.get(i).setOnClickListener(new View.OnClickListener()
+                {
                      @Override
-                     public void onClick(View view) {
+                     public void onClick(View view)
+                     {
                      if(page)
                      {
                           gotoLevel(finalI +1);
@@ -70,9 +74,11 @@ public class level2 extends AppCompatActivity {
                 });
             }
 
-            iv.setOnClickListener(new View.OnClickListener() {
+            iv.setOnClickListener(new View.OnClickListener()
+            {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 b1.setText("13");
                 b2.setText("14");
                 b3.setText("15");
@@ -90,25 +96,31 @@ public class level2 extends AppCompatActivity {
 
                 View namebar = v.findViewById(R.id.nextpage);
                 ViewGroup parent = (ViewGroup) namebar.getParent();
-                if (parent != null) {
+                if (parent != null)
+                {
                     parent.removeView(namebar);
                 }
 
-                b13.setOnClickListener(new View.OnClickListener() {
+                b13.setOnClickListener(new View.OnClickListener()
+                {
                     @Override
-                    public void onClick(View v) {
+                    public void onClick(View v)
+                    {
                         gotoLevel(25);
                     }
                 });
             }
         });
 
-    }catch(Exception e){
+    }
+        catch(Exception e)
+        {
             Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();
         }
     }
 
-    public void gotoLevel(int i) {
+    public void gotoLevel(int i)
+    {
         static1.chosenlevel=i;
         Toast.makeText(this, "Level "+static1.chosenlevel, Toast.LENGTH_SHORT).show();
 
@@ -148,7 +160,8 @@ public class level2 extends AppCompatActivity {
         }
     }
 
-    public void onBackPressed() {
+    public void onBackPressed()
+    {
         try {
 
             super.onBackPressed();
@@ -163,6 +176,7 @@ public class level2 extends AppCompatActivity {
             startActivity(i);
             finish();
         }
+
         catch (Exception e)
         {
             Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
