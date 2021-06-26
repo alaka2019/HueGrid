@@ -55,6 +55,7 @@
         android:background="@drawable/home"
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="10dp"
+        android:id="@+id/home"
         />
 
     <ImageButton
@@ -76,6 +77,7 @@
         android:background="@drawable/nextbtn"
         android:layout_marginLeft="5dp"
         android:layout_marginBottom="5dp"
+        android:id="@+id/next"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

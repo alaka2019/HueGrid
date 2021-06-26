@@ -119,28 +119,28 @@ public class level2 extends AppCompatActivity {
             finish();
         }
 
-        else if(i<7)
+        else if(i<10)
         {
             Intent intent=new Intent(getApplicationContext(),square2.class);
             startActivity(intent);
             finish();
         }
 
-        else if(i<10)
+        else if(i<16)
         {
             Intent intent=new Intent(getApplicationContext(),square3.class);
             startActivity(intent);
             finish();
         }
 
-        else if(i<13)
+        else if(i<20)
         {
             Intent intent=new Intent(getApplicationContext(),triangle.class);
             startActivity(intent);
             finish();
         }
 
-        else if(i<16)
+        else
         {
             Intent intent=new Intent(getApplicationContext(),rhombus.class);
             startActivity(intent);

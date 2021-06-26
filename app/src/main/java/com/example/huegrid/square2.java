@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class square2 extends AppCompatActivity {
     ImageButton b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16;
     ImageView home, retry;
-    int level;
+    int level,level2;
     TextView lev;
     ArrayList<Integer> color;
     ArrayList<ArrayList<ImageButton>> buttons;
@@ -24,7 +24,8 @@ public class square2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_square2);
-        level=static1.chosenlevel-3;
+        level2=static1.chosenlevel;
+        level=level2/2-1;
         b1=findViewById(R.id.b1);
         b2=findViewById(R.id.b2);
         b3=findViewById(R.id.b3);
@@ -150,7 +151,7 @@ public class square2 extends AppCompatActivity {
 
     public void initgame()
     {
-        if(level==1) {
+        if(level2==4) {
             color.clear();
             color.add(0);
             color.add(1);
@@ -170,33 +171,76 @@ public class square2 extends AppCompatActivity {
             color.add(0);
         }
 
-        if(level==2)
-        {
+        if(level2==5) {
             lev.setText("Level 5");
             color.clear();
             color.add(1);
-            color.add(1);
-            color.add(2);
-            color.add(1);
-            color.add(0);
-            color.add(0);
-            color.add(0);
-            color.add(2);
-            color.add(0);
-            color.add(2);
-            color.add(0);
             color.add(0);
             color.add(1);
-            color.add(2);
+            color.add(1);
+            color.add(1);
             color.add(0);
-            color.add(2);
+            color.add(1);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(1);
+            color.add(1);
+            color.add(1);
+            color.add(0);
+            color.add(0);
         }
 
-        if(level==3)
+        if(level2==6)
         {
             lev.setText("Level 6");
             color.clear();
             color.add(1);
+            color.add(1);
+            color.add(2);
+            color.add(1);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(2);
+            color.add(0);
+            color.add(2);
+            color.add(0);
+            color.add(0);
+            color.add(1);
+            color.add(2);
+            color.add(0);
+            color.add(2);
+        }
+
+        if(level2==7)
+        {
+            lev.setText("Level 7");
+            color.clear();
+            color.add(2);
+            color.add(2);
+            color.add(0);
+            color.add(2);
+            color.add(1);
+            color.add(0);
+            color.add(0);
+            color.add(2);
+            color.add(1);
+            color.add(2);
+            color.add(0);
+            color.add(0);
+            color.add(2);
+            color.add(2);
+            color.add(0);
+            color.add(2);
+        }
+
+        if(level2==8)
+        {
+            lev.setText("Level 8");
+            color.clear();
+            color.add(1);
             color.add(3);
             color.add(0);
             color.add(2);
@@ -209,6 +253,28 @@ public class square2 extends AppCompatActivity {
             color.add(2);
             color.add(2);
             color.add(3);
+            color.add(0);
+            color.add(1);
+            color.add(0);
+        }
+
+        if(level2==9)
+        {
+            lev.setText("Level 9");
+            color.clear();
+            color.add(2);
+            color.add(0);
+            color.add(1);
+            color.add(3);
+            color.add(0);
+            color.add(1);
+            color.add(3);
+            color.add(0);
+            color.add(3);
+            color.add(2);
+            color.add(2);
+            color.add(2);
+            color.add(0);
             color.add(0);
             color.add(1);
             color.add(0);
