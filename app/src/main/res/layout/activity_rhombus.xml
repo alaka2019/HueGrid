@@ -15,7 +15,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:textColor="@color/white"
         android:textSize="45dp"
-        android:text="Level 13"
+        android:text="Level 22"
         android:fontFamily="@font/lob_bold"
         android:gravity="center"
         android:layout_marginTop="50dp"

@@ -47,7 +47,7 @@ public class rhombus extends AppCompatActivity {
 
             color = new ArrayList<>();
             buttons = new ArrayList<>();
-            level=static1.chosenlevel-12;
+            level=static1.chosenlevel-21;
             lev=findViewById(R.id.level);
             back=findViewById(R.id.back);
             retry=findViewById(R.id.retry);
@@ -188,12 +188,12 @@ public class rhombus extends AppCompatActivity {
 
                         boolean flag=checkfinish();
 
-                        if(flag)
+                        /*if(flag)
                         {
                             Intent in=new Intent(getApplicationContext(),next.class);
                             startActivity(in);
                             finish();
-                        }
+                        }*/
 
                     }
                 });
@@ -232,7 +232,7 @@ public class rhombus extends AppCompatActivity {
 
         if(level==2)
         {
-            lev.setText("Level 14");
+            lev.setText("Level 23");
             color.clear();
             /*Tough*/
             color.add(2);
@@ -257,7 +257,7 @@ public class rhombus extends AppCompatActivity {
 
         if(level==3)
         {
-            lev.setText("Level 15");
+            lev.setText("Level 24");
             color.clear();
             color.add(1);
             color.add(3);
@@ -276,6 +276,30 @@ public class rhombus extends AppCompatActivity {
             color.add(2);
             color.add(1);
             color.add(1);
+            color.add(0);
+        }
+
+        if(level==4)
+        {
+            lev.setText("Level 25");
+            color.clear();
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
+            color.add(0);
             color.add(0);
         }
 
@@ -301,6 +325,9 @@ public class rhombus extends AppCompatActivity {
                 case 3:
                     imb.setImageResource(R.drawable.bg44);
                     break;
+                case 4:
+                    imb.setImageResource(R.drawable.bg55);
+                    break;
             }
         }
 
@@ -319,6 +346,9 @@ public class rhombus extends AppCompatActivity {
                 case 3:
                     imb.setImageResource(R.drawable.bg4);
                     break;
+                case 4:
+                    imb.setImageResource(R.drawable.bg5);
+                    break;
             }
         }
 
@@ -335,6 +365,4 @@ public class rhombus extends AppCompatActivity {
         return true;
 
     }
-
-
 }
